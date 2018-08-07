@@ -1,11 +1,16 @@
-package com.microz.guideview.aty;
+package com.microz.guideview;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import com.microz.guideview.R;
+
+import com.microz.guideview.aty.FragActivity;
+import com.microz.guideview.aty.FullActivity;
+import com.microz.guideview.aty.MyListActivity;
+import com.microz.guideview.aty.SimpleGuideViewActivity;
+import com.microz.guideview.aty.ViewActivity;
 
 public class HomeActivity extends Activity implements View.OnClickListener {
   private Button mBtnAty, mBtnFrag, mBtnList, mBtnView, mBtnFragView, mBtnMore;
