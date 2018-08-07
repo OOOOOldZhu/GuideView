@@ -35,21 +35,27 @@ public class HomeActivity extends Activity implements View.OnClickListener {
   @Override public void onClick(View view) {
     switch (view.getId()) {
       case R.id.btn_aty:
+        // 遮罩整个activity
         startActivity(new Intent(HomeActivity.this, FullActivity.class));
         break;
       case R.id.btn_frag:
+        // 遮罩整个fragment
         startActivity(new Intent(HomeActivity.this, FragActivity.class).putExtra("fragmentId",0));
         break;
       case R.id.btn_frag_view:
+        // 遮罩fragment中的某个view
         startActivity(new Intent(HomeActivity.this, FragActivity.class).putExtra("fragmentId",1));
         break;
       case R.id.btn_list:
+        // 遮罩listview
         startActivity(new Intent(HomeActivity.this, MyListActivity.class));
         break;
       case R.id.btn_more:
+        // 单个页面多个遮罩
         startActivity(new Intent(HomeActivity.this, SimpleGuideViewActivity.class));
         break;
       case R.id.btn_view:
+        // 遮罩某个view
         startActivity(new Intent(HomeActivity.this, ViewActivity.class));
         break;
     }
